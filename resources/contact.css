@@ -1,0 +1,19 @@
+.form-group label {
+    color: white;
+}
+
+.form-group textarea {
+    margin-bottom: 50px;
+}
+
+.contact-form-header {
+    padding: 20px;
+}
+
+.social-media-header {
+    padding: 20px;
+}
+
+.btn-block {
+    margin: 20px 0;
+}
