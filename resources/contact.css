@@ -1,23 +1,88 @@
+html, body {
+    overflow-y: hidden;
+}
+
 body {
     background: rgb(72, 78, 84);
 }
 
+div.form-container {
+    padding: 20px 40px; 
+    height: 80vh;
+    box-shadow: 5px 0 7px 3px rgba(0, 0, 0, 85%), -5px 0 7px 3px rgba(0, 0, 0, 85%);
+    background-image: url(../resources/kuggen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+div.form-container::-webkit-scrollbar {
+    display: none;
+}
+
+div.form-container h3 {
+    text-shadow: 2px 2px 2px black;
+}
+
 .form-group label {
+    color: white;
+    font-weight: 300;
+    text-shadow: 2px 2px 3px black;
+}
+
+.form-group input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    border-radius: 0%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.form-group input:focus {
+    background-color: rgba(0, 0, 0, 25%);
+    border-color: rgba(0, 0, 0, 30%);
+    box-shadow: 0px 3px 5px 2px black;
     color: white;
 }
 
 .form-group textarea {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    background: transparent;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    border-radius: 0%;
 }
 
-.contact-form-header {
-    padding: 20px;
+.form-group textarea:focus {
+    background-color: rgba(0, 0, 0, 25%);
+    border-color: rgba(0, 0, 0, 30%);
+    box-shadow: 0px 3px 5px 2px black;
+    color: white;
 }
 
-.social-media-header {
-    padding: 20px;
+.form-group textarea::placeholder {
+    color: white;
+    position: fixed;
 }
 
-.btn-block {
-    margin: 20px 0;
+.form-group input::placeholder {
+    color: white;
+}
+
+button[type=submit] {
+    text-align: left;
+    margin-bottom: 25px;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 60%);
+    width: 33%;
+    transition: 0.6s;
+}
+
+button[type=submit]:hover {
+    background: rgba(255, 255, 255, 60%);
+    color: black;
+    width: 100%;
 }
