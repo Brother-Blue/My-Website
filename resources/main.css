@@ -1,34 +1,83 @@
+html, body {
+    overflow-y: hidden;
+}
+
+body {
+    background: rgb(72, 78, 84);
+}
+
 .jumbotron {
     background-image: url(../resources/nyc-banner.jpg); 
     background-repeat: no-repeat; 
     background-size: cover;
-    height: 40vh;    
-}
-
-@media only screen and (min-width: 1400px) {
-    .jumbotron div.container {
-        padding-top: 30px;
-        padding-top: 0px 20px 20px 20px;
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    .jumbotron div.container {
-        padding-top: 30px;
-        padding-top: 0px 20px 20px 20px;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .jumbotron div.container p.lead {
-        visibility: hidden;
-        background: transparent;
-    }
+    height: 40vh;
+    box-shadow: 0 5px 5px 5px black;
 }
 
 div.container h1, p.lead {
     font-weight: 300;
     margin-bottom: 20px;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 2px 2px 2px black;
+}
+
+div.about-me-container {
+    padding-top: 40px;
+    margin-top: -60px;
+    height: 60vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+div.about-me-container::-webkit-scrollbar {
+    display: none;
+}
+
+div.about-me h4, p {
+    color: rgb(200, 200, 200);
+}
+
+a.about-me-link {
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+}
+
+a.about-me-link:hover {
+    color: rgb(255, 255, 153);
+}
+
+/* HD Resolutions */
+@media only screen and (min-width: 1900px) {
+    .jumbotron div.container {
+        padding-top: 30px;
+        padding-top: 0px 20px 20px 20px;
+        margin: 0 auto;
+    }
+
+    div.about-me-container {
+        margin-top: -90px;
+    }
+}
+
+/* Standard Resolutions */
+@media only screen and (max-width: 1200px) {
+    .jumbotron div.container {
+        padding-top: 30px;
+        padding-top: 0px 20px 20px 20px;
+    }
+
+    div.about-me-container {
+        margin-top: -60px;
+    }
+}
+
+/* Mobile Resolutions */
+@media only screen and (max-width: 992px) {
+    .jumbotron div.container p.lead {
+        visibility: hidden;
+        background: transparent;
+    }
+
+    div.about-me-container {
+        margin-top: -40px;
+    }
 }
