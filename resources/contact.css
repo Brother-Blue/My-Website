@@ -6,9 +6,41 @@ body {
     background: rgb(72, 78, 84);
 }
 
+div.buttons-mobile {
+    visibility: hidden;
+}
+
+button.mobile-social {
+    background: rgba(0, 0, 0, 60%);
+    color: white;
+}
+
+button.mobile-social:hover {
+    background: rgba(255, 255, 255, 60%);
+    color: black;
+}
+
+button.mobile-social:focus {
+    background: rgba(0, 0, 0, 60%);
+    color: white;
+}
+
+div.buttons-mobile .dropdown-menu {
+    background: transparent;
+    border: none;
+    transition: 0.5s;
+}
+
+div.buttons-mobile .dropdown-menu a {
+    width: 100%;
+    margin: 5px auto;
+}
+
 div.form-container {
     padding: 20px 40px; 
     height: 80vh;
+    width: 60vh;
+    margin: 15vh auto;
     box-shadow: 5px 0 7px 3px rgba(0, 0, 0, 85%), -5px 0 7px 3px rgba(0, 0, 0, 85%);
     background-image: url(../resources/kuggen.jpg);
     background-repeat: no-repeat;
@@ -54,6 +86,7 @@ div.form-container h3 {
     border: none;
     border-bottom: 2px solid rgb(200, 200, 200);
     border-radius: 0%;
+    text-shadow: 2px 2px 2px black;
 }
 
 .form-group textarea:focus {
@@ -73,11 +106,13 @@ div.form-container h3 {
 }
 
 button[type=submit] {
-    text-align: left;
-    margin-bottom: 25px;
+    text-align: center;
+    display: inline-table;
+    vertical-align: bottom;
+    margin: auto auto;
     padding: 10px 10px;
     background: rgba(0, 0, 0, 60%);
-    width: 33%;
+    width: 30%;
     transition: 0.6s;
 }
 
@@ -85,4 +120,28 @@ button[type=submit]:hover {
     background: rgba(255, 255, 255, 60%);
     color: black;
     width: 100%;
+}
+
+/* Standard Resolutions */
+@media only screen and (max-width: 1400px) {
+    button[type="submit"] {
+        width: 50%;
+        margin: 25px auto;
+    }
+}
+
+/* Mobile Resolutions */
+@media only screen and (max-width: 780px) {
+    div.buttons-large-screen, hr:last-of-type {
+        visibility: hidden;
+    }
+
+    div.buttons-mobile {
+        visibility: initial;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        margin: 25px auto;
+    }
 }

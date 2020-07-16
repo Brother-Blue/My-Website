@@ -55,23 +55,24 @@ a.about-me-link:hover {
 
     div.about-me-container {
         margin-top: -90px;
+        font-size: 130%;
     }
 }
 
 /* Standard Resolutions */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
     .jumbotron div.container {
         padding-top: 30px;
         padding-top: 0px 20px 20px 20px;
     }
 
     div.about-me-container {
-        margin-top: -60px;
+        margin-top: -90px;
     }
 }
 
 /* Mobile Resolutions */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 780px) {
     .jumbotron div.container p.lead {
         visibility: hidden;
         background: transparent;
