@@ -60,7 +60,7 @@ a.about-me-link:hover {
 }
 
 /* Standard Resolutions */
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1359px) {
     .jumbotron div.container {
         padding-top: 30px;
         padding-top: 0px 20px 20px 20px;
@@ -79,6 +79,6 @@ a.about-me-link:hover {
     }
 
     div.about-me-container {
-        margin-top: -40px;
+        margin-top: -45px;
     }
 }

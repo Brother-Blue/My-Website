@@ -39,7 +39,7 @@ div.buttons-mobile .dropdown-menu a {
 div.form-container {
     padding: 20px 40px; 
     height: 80vh;
-    width: 60vh;
+    width: 80vh;
     margin: 15vh auto;
     box-shadow: 5px 0 7px 3px rgba(0, 0, 0, 85%), -5px 0 7px 3px rgba(0, 0, 0, 85%);
     background-image: url(../resources/kuggen.jpg);
